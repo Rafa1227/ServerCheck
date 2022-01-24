@@ -10,26 +10,23 @@
 
     <style>
         body {
-            width: 360px;
             height: 640px;
 
             background: linear-gradient(180deg, #202020 0%, #303030 100%);
             background-repeat: no-repeat;
         }
         #icon {
-            position: absolute;
-            left: 25.56%;
-            right: 25.56%;
-            top: 4.53%;
-            bottom: 83.91%;
+            position: relative;
+            left: 25%;
+            top: 25%;
+
 
         }
         #Search{
             position: relative;
             width: 315px;
-            height: 49px;
             left: 22px;
-            top: 121px;
+            margin-top: 50px;
 
             background: #333333;
             border: 1px solid #545454;
@@ -55,7 +52,7 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            margin-top: 150px;
+            margin-top: 30px;
         }
         #weblist li a {
 
@@ -82,11 +79,11 @@
         }
 
         #back {
-            position: absolute;
+            position: relative;
             width: 28px;
             height: 27.26px;
-            left: 166px;
-            top: 585px;
+            margin-left: 170px;
+            margin-top: 20px;
 
         }
 
@@ -95,18 +92,50 @@
     <title>ServerCheck</title>
   </head>
   <body>
-    <img src="img/Icon.png" alt="" id="icon">
+    <div class="container">
 
-    <input type="text" id="Search" onkeyup="SearchFunction()" placeholder="Search">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><img src="img/Icon.png" alt="" id="icon"></div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <input type="text" id="Search" onkeyup="SearchFunction()" placeholder="Search">
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <ul id="weblist">
+                    <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b1">Server 1</a></li>
+                    <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b2">Server 2</a></li>
+                    <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b3">Server 3</a></li>
+                    <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b4">Server 4</a></li>
+                </ul>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <a href="ServerCheck.html"><img src="/img/Nav.png" alt="" id="back"></a>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
     
-    <ul id="weblist">
-        <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b1">Server 1</a></li>
-        <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b2">Server 2</a></li>
-        <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b3">Server 3</a></li>
-        <li><a class="btn btn-outline-primary" href="Server.html" role="button" id="b4">Server 4</a></li>
-    </ul>
 
-    <a href="ServerCheck.html"><img src="/img/Nav.png" alt="" id="back"></a>
+    
+    
+    
+
+    
 
 
 
