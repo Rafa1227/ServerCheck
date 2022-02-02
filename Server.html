@@ -64,7 +64,7 @@
           height: 59px;
 
           background: #333333;
-          border: 2px solid #15FF9D;
+          border: 2px solid #727272;
           box-sizing: border-box;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 7px;
@@ -84,7 +84,7 @@
           height: 59px;
 
           background: #333333;
-          border: 2px solid #15FF9D;
+          border: 2px solid #727272;
           box-sizing: border-box;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 7px;
@@ -104,7 +104,7 @@
           height: 59px;
 
           background: #333333;
-          border: 2px solid #FD3838;
+          border: 2px solid #727272;
           box-sizing: border-box;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 7px;
@@ -124,7 +124,7 @@
           height: 59px;
 
           background: #333333;
-          border: 2px solid #15FF9D;
+          border: 2px solid #727272;
           box-sizing: border-box;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 7px;
@@ -211,6 +211,67 @@
       </div>
 
     </div>
+
+
+    <script>
+
+      function isSiteOnline(url,callback) {
+          var timer = setTimeout(function(){
+              callback(false);
+          },5000)
+
+          var img = document.createElement("img");
+          img.onload = function() {
+              clearTimeout(timer);
+              callback(true);
+          }
+
+          img.onerror = function() {
+              clearTimeout(timer);
+              callback(false);
+          }
+
+          img.src = url+"/favicon.ico";
+      }
+
+      isSiteOnline("http://www.facebook.com",function(found){
+        if(found) {
+            document.getElementById('web1').style.border = '2px solid #15FF9D'
+        }
+        else {
+            document.getElementById('web1').style.border = '2px solid #FD3838'
+        }
+    })
+
+
+    isSiteOnline("http://www.google.com",function(found){
+        if(found) {
+            document.getElementById('web2').style.border = '2px solid #15FF9D'
+        }
+        else {
+            document.getElementById('web2').style.border = '2px solid #FD3838'
+        }
+    })
+
+    isSiteOnline("http://www.twitch.tv",function(found){
+        if(found) {
+            document.getElementById('web3').style.border = '2px solid #15FF9D'
+        }
+        else {
+            document.getElementById('web3').style.border = '2px solid #FD3838'
+        }
+    })
+
+    isSiteOnline("http://www.twitter.com",function(found){
+        if(found) {
+            document.getElementById('web4').style.border = '2px solid #15FF9D'
+        }
+        else {
+            document.getElementById('web4').style.border = '2px solid #FD3838'
+        }
+    })
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
