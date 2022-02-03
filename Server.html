@@ -186,10 +186,10 @@
         <div class="col">
 
           <ul id="weblist">
-            <li><a class="btn btn-outline-primary" href="#" role="button" id="web1">Web 1</a></li>
-            <li><a class="btn btn-outline-primary" href="#" role="button" id="web2">Web 2</a></li>
-            <li><a class="btn btn-outline-primary" href="#" role="button" id="web3">Web 3</a></li>
-            <li><a class="btn btn-outline-primary" href="#" role="button" id="web4">Web 4</a></li>
+            <li><a class="btn btn-outline-primary" href="#" role="button" id="web1">Facebook</a></li>
+            <li><a class="btn btn-outline-primary" href="#" role="button" id="web2">Google</a></li>
+            <li><a class="btn btn-outline-primary" href="#" role="button" id="web3">TETR.io</a></li>
+            <li><a class="btn btn-outline-primary" href="#" role="button" id="web4">reddit</a></li>
           </ul>
 
         </div>
@@ -252,7 +252,7 @@
         }
     })
 
-    isSiteOnline("http://www.daunbiru.co.id",function(found){
+    isSiteOnline("http://tetr.io",function(found){
         if(found) {
             document.getElementById('web3').style.border = '2px solid #15FF9D'
         }
@@ -261,7 +261,7 @@
         }
     })
 
-    isSiteOnline("http://alpha.daunbiru.com:1888",function(found){
+    isSiteOnline("http://reddit.com",function(found){
         if(found) {
             document.getElementById('web4').style.border = '2px solid #15FF9D'
         }
