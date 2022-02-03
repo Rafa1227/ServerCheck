@@ -218,7 +218,7 @@
       function isSiteOnline(url,callback) {
           var timer = setTimeout(function(){
               callback(false);
-          },5000)
+          },10000)
 
           var img = document.createElement("img");
           img.onload = function() {
@@ -253,7 +253,7 @@
         }
     })
 
-    isSiteOnline("http://www.twitch.tv",function(found){
+    isSiteOnline("http://tetr.io",function(found){
         if(found) {
             document.getElementById('web3').style.border = '2px solid #15FF9D'
         }
