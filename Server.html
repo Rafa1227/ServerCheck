@@ -218,7 +218,7 @@
       function isSiteOnline(url,callback) {
           var timer = setTimeout(function(){
               callback(false);
-          },10000)
+          },30000)
 
           var img = document.createElement("img");
           img.onload = function() {
