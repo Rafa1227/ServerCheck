@@ -40,6 +40,7 @@ body {
     }
 
     #weblist {
+        list-style-type: none;
         margin-top: 55px;
     }
 
