@@ -50,8 +50,8 @@
           <ul id="weblist">
 
             <li>
-              <a class="btn btn-outline-primary" href="http://www.facebook.com" role="button" id="web1">
-                Facebook
+              <a class="btn btn-outline-primary" href="https://store.steampowered.com" role="button" id="web1">
+                Steam
                 <div class="lds-ring" id="loader1"><div></div><div></div><div></div><div></div></div>
               </a>
             </li>
@@ -64,8 +64,8 @@
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://tetr.io" role="button" id="web3">
-                TETR.io
+              <a class="btn btn-outline-primary" href="http://twitter.com" role="button" id="web3">
+                Twitter
                 <div class="lds-ring" id="loader3"><div></div><div></div><div></div><div></div></div>
               </a>
             </li>
@@ -120,7 +120,7 @@
           img.src = url+"/favicon.ico";
       }
 
-      isSiteOnline("http://www.facebook.com",function(found){
+      isSiteOnline("http://store.steampowered.com",function(found){
         if(found) {
             document.getElementById('web1').style.border = '2px solid #15FF9D'
             document.getElementById('loader1').style.display = "none"
@@ -142,7 +142,7 @@
         }
     })
 
-    isSiteOnline("http://tetr.io",function(found){
+    isSiteOnline("http://twitter.com",function(found){
         if(found) {
             document.getElementById('web3').style.border = '2px solid #15FF9D'
             document.getElementById('loader3').style.display = "none"
