@@ -169,3 +169,9 @@ body {
         transform: rotate(360deg);
         }
     }
+
+    .check {
+      visibility: hidden;
+      float: right;
+      padding-top: 10px;
+    }

@@ -50,9 +50,10 @@
           <ul id="weblist">
 
             <li>
-              <a class="btn btn-outline-primary" href="http://www.facebook.com" role="button" id="web1">
+              <a class="btn btn-outline-primary" href="http://facebook.com" role="button" id="web1">
                 Facebook
                 <div class="lds-ring" id="loader1"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check1" class="check">
               </a>
             </li>
 
@@ -60,20 +61,23 @@
               <a class="btn btn-outline-primary" href="http://www.instagram.com" role="button" id="web2">
                 Instagram
                 <div class="lds-ring" id="loader2"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check2" class="check">
               </a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://youtube.com" role="button" id="web3">
-                Youtube
+              <a class="btn btn-outline-primary" href="http://reddit.com" role="button" id="web3">
+                Reddit
                 <div class="lds-ring" id="loader3"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check3" class="check">
               </a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://twitch.tv" role="button" id="web4">
-                Twitch
+              <a class="btn btn-outline-primary" href="http://google.com" role="button" id="web4">
+                Google
                 <div class="lds-ring" id="loader4"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check4" class="check">
               </a>
             </li>
           </ul>
@@ -120,14 +124,17 @@
           img.src = url+"/favicon.ico";
       }
 
-      isSiteOnline("http://www.facebook.com",function(found){
+      isSiteOnline("http://facebook.com",function(found){
         if(found) {
             document.getElementById('web1').style.border = '2px solid #15FF9D'
             document.getElementById('loader1').style.display = "none"
+            document.getElementById ('check1').style.visibility = "visible"
+            document.getElementById('check1').src = "img/V.png"
         }
         else {
             document.getElementById('web1').style.border = '2px solid #FD3838'
             document.getElementById('loader1').style.display = "none"
+            document.getElementById('check1').style.visibility = "visible"
         }
     })
 
@@ -135,32 +142,41 @@
         if(found) {
             document.getElementById('web2').style.border = '2px solid #15FF9D'
             document.getElementById('loader2').style.display = "none"
+            document.getElementById ('check2').style.visibility = "visible"
+            document.getElementById('check2').src = "img/V.png"
         }
         else {
             document.getElementById('web2').style.border = '2px solid #FD3838'
             document.getElementById('loader2').style.display = "none"
+            document.getElementById('check2').style.visibility = "visible"
         }
     })
 
-    isSiteOnline("http://youtube.com",function(found){
+    isSiteOnline("http://reddit.com",function(found){
         if(found) {
             document.getElementById('web3').style.border = '2px solid #15FF9D'
             document.getElementById('loader3').style.display = "none"
+            document.getElementById ('check3').style.visibility = "visible"
+            document.getElementById('check3').src = "img/V.png"
         }
         else {
             document.getElementById('web3').style.border = '2px solid #FD3838'
             document.getElementById('loader3').style.display = "none"
+            document.getElementById('check3').style.visibility = "visible"
         }
     })
 
-    isSiteOnline("http://twitch.tv",function(found){
+    isSiteOnline("http://google.com",function(found){
         if(found) {
             document.getElementById('web4').style.border = '2px solid #15FF9D'
             document.getElementById('loader4').style.display = "none"
+            document.getElementById ('check4').style.visibility = "visible"
+            document.getElementById('check4').src = "img/V.png"
         }
         else {
             document.getElementById('web4').style.border = '2px solid #FD3838'
             document.getElementById('loader4').style.display = "none"
+            document.getElementById('check4').style.visibility = "visible"
         }
     })
 

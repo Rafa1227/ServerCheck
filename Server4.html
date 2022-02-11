@@ -50,30 +50,34 @@
           <ul id="weblist">
 
             <li>
-              <a class="btn btn-outline-primary" href="http://www.facebook.com" role="button" id="web1">
-                Facebook
+              <a class="btn btn-outline-primary" href="http://twitch.tv" role="button" id="web1">
+                Twitch
                 <div class="lds-ring" id="loader1"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check1" class="check">
               </a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://www.google.com" role="button" id="web2">
-                Google
+              <a class="btn btn-outline-primary" href="http://stackoverflow.com" role="button" id="web2">
+                StackOverflow
                 <div class="lds-ring" id="loader2"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check2" class="check">
               </a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://tetr.io" role="button" id="web3">
-                TETR.io
+              <a class="btn btn-outline-primary" href="http://github.com" role="button" id="web3">
+                GitHub
                 <div class="lds-ring" id="loader3"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check3" class="check">
               </a>
             </li>
 
             <li>
-              <a class="btn btn-outline-primary" href="http://reddit.com" role="button" id="web4">
-                reddit
+              <a class="btn btn-outline-primary" href="http://youtube.com" role="button" id="web4">
+                Youtube
                 <div class="lds-ring" id="loader4"><div></div><div></div><div></div><div></div></div>
+                <img src="img/X.png " id="check4" class="check">
               </a>
             </li>
           </ul>
@@ -120,47 +124,59 @@
           img.src = url+"/favicon.ico";
       }
 
-      isSiteOnline("http://www.facebook.com",function(found){
+      isSiteOnline("http://twitch.tv",function(found){
         if(found) {
             document.getElementById('web1').style.border = '2px solid #15FF9D'
             document.getElementById('loader1').style.display = "none"
+            document.getElementById ('check1').style.visibility = "visible"
+            document.getElementById('check1').src = "img/V.png"
         }
         else {
             document.getElementById('web1').style.border = '2px solid #FD3838'
             document.getElementById('loader1').style.display = "none"
+            document.getElementById('check1').style.visibility = "visible"
         }
     })
 
-    isSiteOnline("http://www.google.com",function(found){
+    isSiteOnline("http://stackoverflow.com",function(found){
         if(found) {
             document.getElementById('web2').style.border = '2px solid #15FF9D'
             document.getElementById('loader2').style.display = "none"
+            document.getElementById ('check2').style.visibility = "visible"
+            document.getElementById('check2').src = "img/V.png"
         }
         else {
             document.getElementById('web2').style.border = '2px solid #FD3838'
             document.getElementById('loader2').style.display = "none"
+            document.getElementById('check2').style.visibility = "visible"
         }
     })
 
-    isSiteOnline("http://tetr.io",function(found){
+    isSiteOnline("http://github.com",function(found){
         if(found) {
             document.getElementById('web3').style.border = '2px solid #15FF9D'
             document.getElementById('loader3').style.display = "none"
+            document.getElementById ('check3').style.visibility = "visible"
+            document.getElementById('check3').src = "img/V.png"
         }
         else {
             document.getElementById('web3').style.border = '2px solid #FD3838'
             document.getElementById('loader3').style.display = "none"
+            document.getElementById('check3').style.visibility = "visible"
         }
     })
 
-    isSiteOnline("http://reddit.com",function(found){
+    isSiteOnline("http://youtube.com",function(found){
         if(found) {
             document.getElementById('web4').style.border = '2px solid #15FF9D'
             document.getElementById('loader4').style.display = "none"
+            document.getElementById ('check4').style.visibility = "visible"
+            document.getElementById('check4').src = "img/V.png"
         }
         else {
             document.getElementById('web4').style.border = '2px solid #FD3838'
             document.getElementById('loader4').style.display = "none"
+            document.getElementById('check4').style.visibility = "visible"
         }
     })
 
