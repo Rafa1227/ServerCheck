@@ -171,7 +171,6 @@ body {
     }
 
     .check {
-      visibility: hidden;
       float: right;
       padding-top: 10px;
     }
