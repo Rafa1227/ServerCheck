@@ -52,6 +52,12 @@
             padding: 0;
             margin: 0;
             margin-top: 25px;
+            overflow: auto;
+            height: 370px;
+        }
+        
+        #weblist::-webkit-scrollbar {
+            display: none;
         }
 
         #weblist li a {
@@ -87,6 +93,10 @@
 
         }
 
+        #bottom {
+            background: #303030;
+        }
+
     </style>
 
     <title>ServerCheck</title>
@@ -120,7 +130,7 @@
 
         <hr>
 
-        <div class="row">
+        <div class="row" id="scroll">
 
             <div class="col"></div>
 
@@ -131,6 +141,7 @@
                     <li><a class="btn btn-outline-primary" href="Server2.html" role="button" id="b2">Server 2</a></li>
                     <li><a class="btn btn-outline-primary" href="Server3.html" role="button" id="b3">Server 3</a></li>
                     <li><a class="btn btn-outline-primary" href="Server4.html" role="button" id="b4">Server 4</a></li>
+                    <li><a class="btn btn-outline-primary" href="" role="button" id="b4">Server 5</a></li>
                 </ul>
 
             </div>
@@ -139,7 +150,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" id="bottom">
 
             <div class="col"></div>
 
