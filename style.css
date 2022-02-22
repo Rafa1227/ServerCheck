@@ -138,6 +138,7 @@ body {
     display: inline-block;
     position: relative;
     bottom: 40px;
+    right: 10px;
     }
     .lds-ring div {
         box-sizing: border-box;
